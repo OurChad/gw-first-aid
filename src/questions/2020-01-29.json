@@ -1,0 +1,229 @@
+{
+    "id": "2020-01-29",
+    "name": "First Aid Questions - January 2020",
+    "questions": [
+        {
+            "id": "1",
+            "isMultipleAnswers": true,
+            "text": "What should you do if someone has an eye injury?",
+            "options": [
+                {
+                    "id": "1",
+                    "text": "Tell them not to rub eye as this can make it worse",
+                    "isCorrect": true
+                },
+                {
+                    "id": "2",
+                    "text": "If you see something in their eye remove it with your fingers.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "3",
+                    "text": "If you see something in their eye get them to tilt head to side and use a jug of water or sterile solution to wash it out.",
+                    "isCorrect": true
+                }
+            ],
+            "additionalData": {
+                "youtube": "https://www.youtube.com/embed/PHrrxe3p8vw?wmode=opaque",
+                "links": [
+                    "https://confluence.guidewire.com/display/DUBLIN/Eye+Injury"
+                ],
+                "text": "The major causes are foreign objects getting stuck in the eye, cuts or bruises to the eye from an object or a severe blow to the eye from a hard object."
+            }
+        },
+        {
+            "id": "2",
+            "isMultipleAnswers": false,
+            "text": "How many milligrams of aspirin can you give to someone suffering a heart attack?",
+            "options": [
+                {
+                    "id": "1",
+                    "text": "100mg",
+                    "isCorrect": false
+                },
+                {
+                    "id": "2",
+                    "text": "200mg",
+                    "isCorrect": false
+                },
+                {
+                    "id": "3",
+                    "text": "300mg",
+                    "isCorrect": true
+                }
+            ],
+            "additionalData": {
+                "youtube": "https://www.youtube.com/embed/gDwt7dD3awc?wmode=opaque",
+                "links": [
+                    "https://confluence.guidewire.com/display/DUBLIN/Heart+Attack"
+                ],
+                "text": "Remember to check that the patient does not have any allergy to aspirin, is older that 16, does not have a bleeding disorder, and does not have an active stomach ulcer."
+            }
+        },
+        {
+            "id": "3",
+            "isMultipleAnswers": true,
+            "text": "What should you do for someone suffering from a seizure?",
+            "options": [
+                {
+                    "id": "1",
+                    "text": "Clear a space around the person.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "2",
+                    "text": "Put something in their mouth to prevent them biting or swallowing their tongue.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "3",
+                    "text": "Try to time the seizure.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "4",
+                    "text": "Place a towel or something soft under their head.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "5",
+                    "text": "Attempt to restrain the patient.",
+                    "isCorrect": false
+                }
+            ],
+            "additionalData": {
+                "youtube": "https://www.youtube.com/embed/Ovsw7tdneqE?wmode=opaque",
+                "links": [
+                    "https://confluence.guidewire.com/display/DUBLIN/Seizure"
+                ],
+                "text": "It may be necessary to call an ambulance if the person has not suffered a seizure before or if the seizure lasts for more than 5 minutes."
+            }
+        },
+        {
+            "id": "4",
+            "isMultipleAnswers": true,
+            "text": "What are some of the signs / symptoms of Hyperglycaemia?",
+            "options": [
+                {
+                    "id": "1",
+                    "text": "Sweet breath.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "2",
+                    "text": "Frequent urination.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "3",
+                    "text": "Sudden onset.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "4",
+                    "text": "Increased hunger.",
+                    "isCorrect": true
+                }
+            ],
+            "additionalData": {
+                "youtube": "https://www.youtube.com/embed/L06DNMRcy98?wmode=opaque",
+                "links": [
+                    "https://confluence.guidewire.com/display/DUBLIN/Diabetic+Emergency"
+                ],
+                "text": ""
+            }
+        },
+        {
+            "id": "5",
+            "isMultipleAnswers": true,
+            "text": "What are some of the signs / symptoms of Hypoglycaemia?",
+            "options": [
+                {
+                    "id": "1",
+                    "text": "Dry, warm skin.",
+                    "isCorrect": false
+                },
+                {
+                    "id": "2",
+                    "text": "Cool, clammy skin.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "3",
+                    "text": "Sudden onset.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "4",
+                    "text": "Altered level of consciousness.",
+                    "isCorrect": true
+                }
+            ],
+            "additionalData": {
+                "youtube": "https://www.youtube.com/embed/L06DNMRcy98?wmode=opaque",
+                "links": [
+                    "https://confluence.guidewire.com/display/DUBLIN/Diabetic+Emergency"
+                ],
+                "text": ""
+            }
+        },
+        {
+            "id": "6",
+            "isMultipleAnswers": true,
+            "text": "What is the treatment for showing signs of a diabetic emergency?",
+            "options": [
+                {
+                    "id": "1",
+                    "text": "Provide a sweet drink, or food if safe to do so.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "2",
+                    "text": "Advise the patient to eat some carbs if their condition improves.",
+                    "isCorrect": true
+                },
+                {
+                    "id": "3",
+                    "text": "Ask the patient to jog on the spot to help increase heart rate and improve blood flow.",
+                    "isCorrect": false
+                }
+            ],
+            "additionalData": {
+                "youtube": "https://www.youtube.com/embed/L06DNMRcy98?wmode=opaque",
+                "links": [
+                    "https://confluence.guidewire.com/display/DUBLIN/Diabetic+Emergency"
+                ],
+                "text": "The above is for a conscious patient. If the patient is unconscious, be sure to check for a response, call an ambulance, check their airway / breathing, and stay and monitor the patient until an ambulance arrives."
+            }
+        },
+        {
+            "id": "7",
+            "isMultipleAnswers": false,
+            "text": "What does DRABC stand for?",
+            "options": [
+                {
+                    "id": "1",
+                    "text": "Danger, Response, Airway, Breathing, Circulation",
+                    "isCorrect": true
+                },
+                {
+                    "id": "2",
+                    "text": "Damage, Response, Alert, Breathing, CPR",
+                    "isCorrect": false
+                },
+                {
+                    "id": "3",
+                    "text": "Danger, Response, Airway, Broken, Circulation",
+                    "isCorrect": false
+                }
+            ],
+            "additionalData": {
+                "youtube": "https://www.youtube.com/embed/ea1RJUOiNfQ?wmode=opaque",
+                "links": [
+                    "https://confluence.guidewire.com/display/DUBLIN/Primary+Survey"
+                ],
+                "text": "If necessary, request an AED, for someone to call an ambulance, and begin CPR."
+            }
+        }
+    ]
+}

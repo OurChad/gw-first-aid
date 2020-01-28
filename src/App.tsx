@@ -1,25 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import styled from 'styled-components';
+import QuestionSetList from './components/QuestionSetList';
+import QuestionSet from './components/QuestionSet';
+import questionSets from './questions';
+
+const StyledMain = styled.main`
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+`;
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledMain>
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <QuestionSetList questionSets={questionSets} />
+          </Route>
+        {
+          questionSets.map((questionSet) => {
+            return (
+              <Route key={questionSet.id} path={`/${questionSet.id}`}>
+                <QuestionSet questionSet={questionSet} />
+              </Route>
+            )
+          })
+        }
+        </Switch>
+      </Router>
+    </StyledMain>
   );
 }
 
