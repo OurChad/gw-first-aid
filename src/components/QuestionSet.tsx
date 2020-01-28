@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import {
     Switch,
     Route,
@@ -13,6 +13,12 @@ type Props = {
 
 const QuestionSet: React.FC<Props> = ({ questionSet }) => {
     let match = useRouteMatch();
+    const [numberOfCorrectAnswers, setNumberOfCorrectAnswers] = useState<number>(0);
+    const handleSubmit = useCallback((isCorrect: boolean) => {
+        if(isCorrect) {
+            setNumberOfCorrectAnswers(numberOfCorrectAnswers + 1);
+        }
+    }, [setNumberOfCorrectAnswers, numberOfCorrectAnswers]);
 
     return (
         <>
@@ -22,12 +28,13 @@ const QuestionSet: React.FC<Props> = ({ questionSet }) => {
             </div>
             <Switch>
                 <Route path={`${match.url}/complete`}>
-                    <h3>complete</h3>
+                    <h3>Results: {numberOfCorrectAnswers} / {questionSet.questions.length}</h3>
                 </Route>
                 <Route path={`${match.url}/:questionId`}>
                     <QuestionPage 
                         questions={questionSet.questions}
                         url={match.url}
+                        onSubmit={handleSubmit}
                     />
                 </Route>
             </Switch>
