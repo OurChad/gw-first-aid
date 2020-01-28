@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import styled from 'styled-components';
+import Header from './components/Header';
 import QuestionSetList from './components/QuestionSetList';
 import QuestionSet from './components/QuestionSet';
 import questionSets from './questions';
@@ -17,24 +18,27 @@ const StyledMain = styled.main`
 
 const App: React.FC = () => {
   return (
-    <StyledMain>
+    <>
       <Router>
-        <Switch>
-          <Route path="/" exact>
-            <QuestionSetList questionSets={questionSets} />
-          </Route>
-        {
-          questionSets.map((questionSet) => {
-            return (
-              <Route key={questionSet.id} path={`/${questionSet.id}`}>
-                <QuestionSet questionSet={questionSet} />
+        <Header siteTitle="First Aid Quiz" />
+        <StyledMain>
+            <Switch>
+              <Route path="/" exact>
+                <QuestionSetList questionSets={questionSets} />
               </Route>
-            )
-          })
-        }
-        </Switch>
+            {
+              questionSets.map((questionSet) => {
+                return (
+                  <Route key={questionSet.id} path={`/${questionSet.id}`}>
+                    <QuestionSet questionSet={questionSet} />
+                  </Route>
+                )
+              })
+            }
+            </Switch>
+        </StyledMain>
       </Router>
-    </StyledMain>
+    </>
   );
 }
 

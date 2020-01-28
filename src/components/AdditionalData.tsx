@@ -1,5 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 import { QuestionAdditionalData } from '../types';
+
+const StyledVideoIFrame = styled.iframe`
+    width: 90vw;
+    max-width: 560px;
+    height: 315px;
+    max-height: 315px;
+`;
 
 type Props = {
     data: QuestionAdditionalData;
@@ -11,16 +19,14 @@ const AdditionalData: React.FC<Props> = ({ data: { text, youtube, links }}) => {
             <p>{text}</p>
             <div>
                 <h3>Video</h3>
-                <iframe 
+                <StyledVideoIFrame 
                     key={youtube}
                     title={text}
-                    width="560" 
-                    height="315" 
                     src={youtube}
                     frameBorder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                     allowFullScreen
-                ></iframe>
+                ></StyledVideoIFrame>
             </div>
             <div>
                 <h3>Links</h3>

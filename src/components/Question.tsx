@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import styled from 'styled-components';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -16,6 +17,17 @@ type Props = {
     question: QuestionType;
     onSubmit: (isCorrect: boolean) => void;
 }
+
+type StyledResultHeaderProps = {
+    isCorrect: boolean;
+}
+const ResultHeader = styled.h2<StyledResultHeaderProps>`
+    color: ${props => props.isCorrect ? '#63A375' : '#D1495B'};
+`;
+
+const AdditionalDataContainer = styled.div`
+    margin-top: 4rem;
+`;
 
 function renderRadioGroup(options: Option[], handleChange: any, submitted: boolean) {
     return (
@@ -104,19 +116,19 @@ const Question: React.FC<Props> = ({ question, onSubmit }) => {
                 }
             </FormControl>
             <div>
-                <Button type="submit" variant="contained" color="primary" disabled={!isAnswered || submitted}>Submit</Button>
+                {!submitted && <Button type="submit" variant="contained" color="primary" disabled={!isAnswered}>Submit</Button>}
             </div>
         </form>
         {
             submitted ? 
             <div>
-                { isCorrect ? <h3>Correct!</h3> : <h3>Oops! Not quite right...</h3>}
+                { isCorrect ? <ResultHeader isCorrect>Correct!</ResultHeader> : <ResultHeader isCorrect={false}>Oops! Not quite right...</ResultHeader>}
                 <div><Button variant="contained" color="primary" onClick={handleContinue}>Continue</Button></div>
                 { question.additionalData ? 
-                    <>
-                        <h3>Additional Info</h3>
+                    <AdditionalDataContainer>
+                        <h2>Additional Info</h2>
                         <AdditionalData data={question.additionalData || {}} />
-                    </> : 
+                    </AdditionalDataContainer> : 
                     null 
                 }
             </div> :
